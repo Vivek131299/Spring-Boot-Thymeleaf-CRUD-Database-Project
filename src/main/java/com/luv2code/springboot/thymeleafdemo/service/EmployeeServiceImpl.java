@@ -26,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> findAll() {
         // delegate the call to DAO
-        return employeeRepository.findAll();
+        return employeeRepository.findAllByOrderByLastNameAsc();
     }
 
     @Override
