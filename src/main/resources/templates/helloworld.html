@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<!-- Setting up the xmlns namespace for Thymeleaf (:th).
+ So that we can use Thymeleaf expressions in this page. -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Thymeleaf Demo</title>
+</head>
+
+<body>
+
+    <p th:text="'Time on the server is ' + ${theDate}" /> <!-- In our DemoController we have added data to 'theDate' attribute. -->
+
+</body>
+
+</html>

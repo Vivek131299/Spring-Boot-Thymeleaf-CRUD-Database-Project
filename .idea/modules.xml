@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/thymeleafdemo.iml" filepath="$PROJECT_DIR$/thymeleafdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleafdemo-helloworld.iml" filepath="$PROJECT_DIR$/thymeleafdemo-helloworld.iml" />
     </modules>
   </component>
 </project>
