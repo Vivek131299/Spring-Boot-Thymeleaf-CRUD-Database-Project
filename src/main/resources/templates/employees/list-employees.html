@@ -40,12 +40,19 @@
                 <td th:text="${tempEmployee.lastName}" />
                 <td th:text="${tempEmployee.email}" />
 
-                <!-- Add update button -->
                 <td>
+                    <!-- Add update button -->
                     <a th:href="@{/employees/showFormForUpdate(employeeId=${tempEmployee.id})}"
                           class="btn btn-info btn-sm">Update</a>
                     <!-- By using (employeeId=${tempEmployee.id}), we are embedding employee id into button.
                          So it will append ?employeeId=x to the URL so that we can use it to pre-populate our Update Form. -->
+
+                    <!-- Add delete button -->
+                    <a th:href="@{/employees/delete(employeeId=${tempEmployee.id})}"
+                          class="btn btn-danger btn-sm"
+                          onclick="if (!(confirm('Are you sure you want to delete this employee?'))) return false">
+                        Delete</a>
+
                 </td>
 
             </tr>
